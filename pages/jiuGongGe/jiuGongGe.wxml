@@ -1,0 +1,13 @@
+<view class="jiuGongGe">
+    <text class="jiuGongGe-title">九宫格</text>
+    <block wx:for="{{gridLines}}" class="jiuGongGe" wx:for-item="line">
+        <view class="jiuGongGe-Line">
+            <block wx:for="{{line}}" wx:for-item="column">
+                <navigator class="grid-item" url="{{column.route}}">
+                    <image class="item-icon" src="{{column.icon}}" />
+                    <text class="item-text">{{column.text}}</text>
+                </navigator>
+            </block>
+        </view>
+    </block>
+</view>

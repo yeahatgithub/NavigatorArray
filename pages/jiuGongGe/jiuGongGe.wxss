@@ -1,0 +1,26 @@
+/* pages/jiuGongGe/jiuGongGe.wxss */
+.jiuGongGe {  
+  height: 100%;  
+  display: flex;    /* 应用flexBox模型：可以改变子元素的宽高从而更好地填充 */
+  flex-direction: column;  
+  box-sizing: border-box;  /* box的宽、高含内边距padding、框线border，不含外边距margin */
+  padding-top: 10rpx;  
+  padding-bottom: 10rpx;  
+}  
+.jiuGongGe-Line {  
+  width: 100%;  
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-around; /* 水平方向上，各个单元格宽度及其间距相同 */ 
+} 
+.grid-item {  
+  position: relative;  /* 相对定位 */
+  padding: 10rpx;  
+  width: 33%;  
+  background-color: #fff;  
+  border: #ddd solid 1px;  /* 边框线的颜色、线型、宽度 */
+} 
+.item-icon {  
+  width: 100rpx;  
+  height: 100rpx;  
+} 

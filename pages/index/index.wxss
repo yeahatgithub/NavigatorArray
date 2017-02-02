@@ -1,0 +1,53 @@
+/**index.wxss**/
+.pages-container {  
+  height: 100%;  
+  display: flex;    /* 应用flexBox模型：可以改变子元素的宽高从而更好地填充 */
+  flex-direction: column;  
+  box-sizing: border-box;  /* box的宽、高含内边距padding、框线border，不含外边距margin */
+  padding-top: 10rpx;  
+  padding-bottom: 10rpx;  
+}  
+.pages-title-bg {  
+  width: 100%;  
+}  
+.pages-wrapper {  
+}  
+.pages-row {  
+  width: 100%;  
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-around; /* 水平方向上，各个单元格宽度及其间距相同 */ 
+}  
+.pages-item {  
+  position: relative;  /* 相对定位 */
+  padding: 10rpx;  
+  width: 33%;  
+  background-color: #fff;  
+  border: #ddd solid 1px;  /* 边框线的颜色、线型、宽度 */
+}  
+.pages-icon-wrapper {  
+  display: flex;  
+  justify-content: space-around;  
+  align-items: center;  
+  margin: 10rpx;  
+  border-radius: 30%;  /*边角的圆弧。圆角 */
+  height: 75%;  
+  background:#00CD0D;  
+}  
+.pages-icon-wrapper-no-bg {  
+  display: flex;  
+  justify-content: space-around;  
+  align-items: center;  
+  margin: 10rpx;  
+  height: 75%;  
+}  
+.pages-icon {  
+  width: 100rpx;  
+  height: 100rpx;  
+}  
+.pages-text-wrapper {  
+  text-align: center;  /* 文字居中（相对于父元素） */
+}  
+.pages-text {  
+  font-weight: bolder;  
+}  

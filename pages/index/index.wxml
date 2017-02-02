@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<!-- 导入cell.wxml文件 -->
+<import src="cell.wxml" />  
+<view class="pages-container">  
+  <!-- scroll-view是可滚动视图 scroll-y设定纵向滚动 -->
+  <scroll-view scroll-y="true" class="pages-wrapper">  
+    <!-- 对于九宫格的每一行 -->
+    <view wx:for="{{pageItems}}" wx:key="{{text}}">  
+      <view class="pages-row">  
+        <!-- 第1列 -->
+        <!-- ...item[0]是什么用法？估计跟模板有关。在cell.wxml中，没有使用item[0]，而是使用了它的属性text, icon, route。"...object"可以理解为：展开object，把它的属性用作参数。 -->
+        <template is="cell" data="{{...item[0],cellHeight}}" />  
+        <template is="cell" data="{{...item[1],cellHeight}}" />  
+        <template is="cell" data="{{...item[2],cellHeight}}" />  
+      </view>  
+    </view>  
+  </scroll-view>  
+</view>  

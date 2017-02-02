@@ -1,0 +1,17 @@
+<template name="cell">  
+  <!-- 点击navigator视图（在本例中对应九宫格的单元格），能够跳转到{{route}}指定的页面 -->
+  <navigator url="{{route}}" class="pages-item" style="height:{{cellHeight}}">  
+    <view class="{{text==null||text.length==0?'pages-icon-wrapper-no-bg':'pages-icon-wrapper'}}" >  
+      <image src="{{icon}}" class="pages-icon"></image>  
+    </view>  
+    <view class="pages-text-wrapper">  
+      <text class="pages-text">{{text}}</text>  
+    </view>  
+  </navigator>  
+</template>  
+
+<!-- 
+  模板文件的用法：
+  1.  <import src="cell.wxml" /> 
+  2. <template is="模板名" data="模板参数">
+ -->
